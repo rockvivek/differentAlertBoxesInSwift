@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="alertBoxesDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Cd-5w-B2e">
+                                <rect key="frame" x="20" y="148" width="365" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Simple Alert"/>
+                                <connections>
+                                    <action selector="simpleAlertButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wKB-x9-GxR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H9F-Y1-wON">
+                                <rect key="frame" x="20" y="214" width="365" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Simple Action Sheet"/>
+                                <connections>
+                                    <action selector="SimpelActSheet:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MDK-hc-RVP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MMb-T6-W3O">
+                                <rect key="frame" x="20" y="280" width="365" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Alert With Destructive Button"/>
+                                <connections>
+                                    <action selector="AlertDestructiveButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wTM-kx-bs8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uRk-4G-NhC">
+                                <rect key="frame" x="20" y="346" width="365" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Alert With More Then 2 Button"/>
+                                <connections>
+                                    <action selector="alertMoreThen2Button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3nq-IP-eU2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dJG-qz-4C4">
+                                <rect key="frame" x="20" y="412" width="365" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Alert With UITextField"/>
+                                <connections>
+                                    <action selector="alertWithTextField:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XmI-cC-noX"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="MMb-T6-W3O" firstAttribute="leading" secondItem="H9F-Y1-wON" secondAttribute="leading" id="2pu-8i-xCp"/>
+                            <constraint firstItem="uRk-4G-NhC" firstAttribute="top" secondItem="MMb-T6-W3O" secondAttribute="bottom" constant="30" id="6L0-5I-6g8"/>
+                            <constraint firstItem="H9F-Y1-wON" firstAttribute="leading" secondItem="5Cd-5w-B2e" secondAttribute="leading" id="8uj-bc-VfU"/>
+                            <constraint firstItem="MMb-T6-W3O" firstAttribute="trailing" secondItem="H9F-Y1-wON" secondAttribute="trailing" id="AgE-Kf-oAq"/>
+                            <constraint firstItem="MMb-T6-W3O" firstAttribute="top" secondItem="H9F-Y1-wON" secondAttribute="bottom" constant="30" id="NGg-vM-WMw"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5Cd-5w-B2e" secondAttribute="trailing" constant="29" id="Q9E-hH-IhR"/>
+                            <constraint firstItem="H9F-Y1-wON" firstAttribute="trailing" secondItem="5Cd-5w-B2e" secondAttribute="trailing" id="RA1-ux-xAz"/>
+                            <constraint firstItem="H9F-Y1-wON" firstAttribute="top" secondItem="5Cd-5w-B2e" secondAttribute="bottom" constant="30" id="S2w-Gj-n0j"/>
+                            <constraint firstItem="5Cd-5w-B2e" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="eoc-Tq-Ohc"/>
+                            <constraint firstItem="uRk-4G-NhC" firstAttribute="trailing" secondItem="MMb-T6-W3O" secondAttribute="trailing" id="iFM-FH-geM"/>
+                            <constraint firstItem="dJG-qz-4C4" firstAttribute="top" secondItem="uRk-4G-NhC" secondAttribute="bottom" constant="30" id="low-Xa-gsC"/>
+                            <constraint firstItem="uRk-4G-NhC" firstAttribute="leading" secondItem="MMb-T6-W3O" secondAttribute="leading" id="oC4-yn-yow"/>
+                            <constraint firstItem="dJG-qz-4C4" firstAttribute="leading" secondItem="uRk-4G-NhC" secondAttribute="leading" id="r7c-Ky-120"/>
+                            <constraint firstItem="dJG-qz-4C4" firstAttribute="trailing" secondItem="uRk-4G-NhC" secondAttribute="trailing" id="wdH-UH-rR6"/>
+                            <constraint firstItem="5Cd-5w-B2e" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="104" id="xJp-dK-fF6"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-184.05797101449278" y="138.61607142857142"/>
+        </scene>
+    </scenes>
+</document>
